@@ -1,0 +1,10 @@
+# config.yml
+
+input_paths:
+  drugs: "data/input/drugs.csv"
+  pubmed_csv: "data/input/pubmed.csv"
+  pubmed_json: "data/input/pubmed.json"
+  clinical_trials: "data/input/clinical_trials.csv"
+
+output_path:
+  graph: "data/output/drug_graph.json"
