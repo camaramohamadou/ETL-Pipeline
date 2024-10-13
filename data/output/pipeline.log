@@ -1,0 +1,8 @@
+2024-10-13 19:43:51,997 - INFO - Début du pipeline ETL
+2024-10-13 19:43:51,997 - INFO - Début de l'étape d'extraction
+2024-10-13 19:43:52,002 - INFO - Extraction terminée avec succès
+2024-10-13 19:43:52,002 - INFO - Début de l'étape de transformation
+2024-10-13 19:43:52,006 - INFO - Transformation terminée avec succès
+2024-10-13 19:43:52,006 - INFO - Début de l'étape de chargement
+2024-10-13 19:43:52,008 - INFO - Chargement terminé avec succès
+2024-10-13 19:43:52,008 - INFO - Fin du pipeline ETL
