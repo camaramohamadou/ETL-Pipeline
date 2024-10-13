@@ -14,7 +14,7 @@ if __name__ == "__main__":
         drugs, pubmed_csv, pubmed_json, clinical_trials = extract_data()
         logger.info("Extraction terminée avec succès")
     except Exception as e:
-        logger.error(f"Erreur lors de l'extraction des données: {e}")
+        logger.error(f" Erreur lors de l'extraction des données: {e}")
 
     # Transformation
     try:
