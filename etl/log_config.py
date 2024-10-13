@@ -2,13 +2,23 @@ import logging
 
 def setup_logger():
     # Configuration basique du logger
-    logging.basicConfig(
-        level=logging.INFO,  # Niveau de log (peut être ajusté à DEBUG pour plus de détails)
-        format="%(asctime)s - %(levelname)s - %(message)s",  # Format des messages de log
-        handlers=[
-            logging.FileHandler("data/output/pipeline.log"),  # Fichier de log
-            logging.StreamHandler()  # Affiche aussi dans la console
-        ]
-    )
-    logger = logging.getLogger()
+    logger = logging.getLogger('etl_pipeline')
+    logger.setLevel(logging.INFO)  # Niveau de log (peut être ajusté à DEBUG)
+
+    # Créer un format pour les messages de log
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+
+    # Handler pour écrire les logs dans un fichier
+    file_handler = logging.FileHandler("data/output/pipeline.log")
+    file_handler.setFormatter(formatter)
+
+    # Handler pour afficher les logs dans la console
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+
+    # Ajouter les handlers au logger
+    if not logger.handlers:  # Évite d'ajouter plusieurs handlers lors de multiples initialisations
+        logger.addHandler(file_handler)
+        logger.addHandler(console_handler)
+
     return logger

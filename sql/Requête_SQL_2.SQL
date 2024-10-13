@@ -1,8 +1,17 @@
--- 2. Requête pour les ventes par type de produit (MEUBLE vs DECO) par client en 2019
 SELECT
     t.client_id,
-    SUM(CASE WHEN p.product_type = 'MEUBLE' THEN t.prod_price * t.prod_qty ELSE 0 END) AS ventes_meuble,
-    SUM(CASE WHEN p.product_type = 'DECO' THEN t.prod_price * t.prod_qty ELSE 0 END) AS ventes_deco
+    SUM(
+        CASE 
+            WHEN p.product_type = 'MEUBLE' 
+                THEN t.prod_price * t.prod_qty 
+            ELSE 0 
+        END) AS ventes_meuble,
+    SUM(
+        CASE 
+            WHEN p.product_type = 'DECO' 
+                THEN t.prod_price * t.prod_qty 
+            ELSE 0 
+        END) AS ventes_deco
 FROM
     TRANSACTIONS t
 JOIN

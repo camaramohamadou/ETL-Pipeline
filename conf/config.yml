@@ -1,4 +1,7 @@
 # config.yml
+#Ici sont les chemins des fichiers d'entrée et de sortie.
+
+# chemins des fichiers d'entrée
 
 input_paths:
   drugs: "data/input/drugs.csv"
@@ -6,5 +9,6 @@ input_paths:
   pubmed_json: "data/input/pubmed.json"
   clinical_trials: "data/input/clinical_trials.csv"
 
+# chemins des fichiers de sortie
 output_path:
   graph: "data/output/drug_graph.json"

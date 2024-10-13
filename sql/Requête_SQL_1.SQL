@@ -3,7 +3,9 @@
 
 SELECT
     date,
-    SUM(prod_price * prod_qty) AS ventes
+    SUM(
+        prod_price * prod_qty
+        ) AS ventes
 FROM
     TRANSACTIONS
 WHERE

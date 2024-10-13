@@ -1,8 +1,11 @@
-2024-10-13 19:43:51,997 - INFO - Début du pipeline ETL
-2024-10-13 19:43:51,997 - INFO - Début de l'étape d'extraction
-2024-10-13 19:43:52,002 - INFO - Extraction terminée avec succès
-2024-10-13 19:43:52,002 - INFO - Début de l'étape de transformation
-2024-10-13 19:43:52,006 - INFO - Transformation terminée avec succès
-2024-10-13 19:43:52,006 - INFO - Début de l'étape de chargement
-2024-10-13 19:43:52,008 - INFO - Chargement terminé avec succès
-2024-10-13 19:43:52,008 - INFO - Fin du pipeline ETL
+2024-10-14 11:00:05,781 - INFO - Début du pipeline ETL
+2024-10-14 11:00:05,781 - INFO - Extraction des données
+2024-10-14 11:00:05,787 - INFO - Extraction terminée
+2024-10-14 11:00:05,787 - INFO - Transformation des données
+2024-10-14 11:00:05,791 - INFO - Transformation terminée
+2024-10-14 11:00:05,791 - INFO - Recherche du journal mentionnant le plus de médicaments
+2024-10-14 11:00:05,792 - INFO - Le journal qui mentionne le plus de médicaments est : Psychopharmacology
+2024-10-14 11:00:05,792 - INFO - Recherche des médicaments liés à un médicament donné dans PubMed
+2024-10-14 11:00:05,793 - INFO - Les médicaments liés à Aspirin dans PubMed mais pas dans Clinical Trials sont : set()
+2024-10-14 11:00:05,793 - INFO - Chargement des données
+2024-10-14 11:00:05,794 - INFO - Pipeline terminé avec succès

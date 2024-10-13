@@ -18,3 +18,4 @@ cd <NOM_DU_REPOSITORY>
 
 ### 6. **Après Exécution**
 Le graphe JSON généré sera disponible dans `data/output/drug_graph.json`.
+Ainsi pipeline.log contient les logs du pipeline. dans le dossier data/output.
